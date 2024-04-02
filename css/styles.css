@@ -1,0 +1,115 @@
+.hero {
+    background-color: #1f2937;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.header-logo{
+    font-size: 24px;
+    color: #f9faf8;
+    text-align: center;
+    margin: 0 auto;
+}
+.hero h3 {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.topNavBar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headers-container{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px
+}
+.headers-container h3:not(:first-child) {
+    margin-left: 20px;
+}
+
+.header-logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.hero-container{
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.hero-main-text-container{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.hero-main-text {
+    font-size: 48px;
+    font-weight: 800;
+    color: #f9faf8;
+}
+.hero-secondary-text {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.sign-up-button {
+    background-color: #3882f6;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: none;
+    width: 150px;
+    height: 40px;
+}
+
+.second-div {
+
+}
+
+.content-title {
+
+}
+
+.horizontal-images-container {
+
+}
+
+.vertical-container {
+
+}
+
+.border-rounded-img-container {
+
+}
+
+.image-description-text {
+
+}
+
+.ultramega-inspiring {
+
+}
+
+.quote {
+
+}
+
+.author-name-text {
+
+}
+
+.sing-up-container {
+
+}
+
+.copyright-text {
+
+}
