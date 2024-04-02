@@ -1,4 +1,122 @@
+
+@font-face {
+    /*Adding the font*/
+    font-family: 'Roboto';
+    src: url('./font-family/Roboto/Roboto-Regular.ttf') format('truetype');  
+       font-weight: normal;
+       font-style: normal;
+       src: url('path-to-your-fonts/Roboto-Regular.ttf') format('truetype'),
+            url('path-to-your-fonts/Roboto-Bold.ttf') format('truetype');
+    
+}
+* {
+    box-sizing: border-box;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+/*hero part + nav*/
 .hero {
+    background-color: #1F2937;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero .title h1 {    
+    margin-bottom: 20px;    
+}
+
+.hero .title .description {
+    margin-bottom: 30px;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #3882F6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.hero .secondary{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    float: left;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.menu-content {
+    float: right;
+}
+
+.menu-content nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu-content nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu-content nav ul li:last-child {
+    margin-right: 0;
+}
+/* Container flex in hero */
+.container{
+    display: flex;  
+    justify-content: space-around;
+    text-align: center; 
+}
+
+.container-item-left {
+    padding: 0px;
+    width: 40%;
+  }
+  
+  .container-item-right {
+    background-color: dodgerblue;
+    width: 40%;
+  }
+  /* Responsive layout - makes a one column layout (100%) instead of a two-column layout (50%) */
+@media (max-width: 800px) {
+    .container-item-right, .container-item-left {
+      flex: 100%;
+    }
+  }
+  
+/*hero finish here*/
+/*.hero {
     background-color: #1f2937;
     width: 100%;
     height: 600px;
@@ -69,7 +187,7 @@
     width: 150px;
     height: 40px;
 }
-
+*/
 .second-div {
 
 }
