@@ -188,48 +188,78 @@ h1{
     height: 40px;
 }
 */
-.second-div {
-
-}
-
-.content-title {
-
-}
-
-.horizontal-images-container {
-
-}
-
-.vertical-container {
-
-}
-
-.border-rounded-img-container {
-
-}
-
-.image-description-text {
-
-}
-
 .ultramega-inspiring {
-
+    background-color: #e5e7eb;
+    padding: 5% 10%;
+}
+.ultramega-inspiring p {
+    display: flex;
+    flex-direction: column;
+}
+.ultramega-inspiring h3 {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 36px;
+    color: #1F2937;
+}
+.ultramega-inspiring .author-name-text{
+    font-size: 24px;
+    font-weight: 900;
+    text-align: right;
 }
 
-.quote {
-
+.sign-up-container {
+    background-color: #3882F6;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 8%;
+    color: white;
+    display: flex;
+    border-radius: 5px;
 }
-
-.author-name-text {
-
+.sign-up-container div{
+    display: flex;
+    justify-content:  center;
+    flex-direction: column;
+    padding: 40px;
+    margin-left: auto;
 }
-
-.sing-up-container {
-
+.sign-up-container div h4 {
+    color: #E5E7EB ;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0
 }
-
+.sign-up-container div h3{
+    margin: 0;
+}
+.sign-up-container .sign-up-button {
+    border: 2px solid white;
+    width: 160px;
+    margin: auto;
+}
+.sign-up-button {
+    background-color: #3882F6;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+footer {
+    padding: 20px 0;
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    color: #E5E7EB;
+}
 .copyright-text {
-
+    text-align: center;
+    font-size: 18px;
 }
 
 /*Ehsan CSS*/
