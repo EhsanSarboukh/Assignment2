@@ -1,0 +1,199 @@
+/* CSS styling */
+@font-face {
+    /*Adding the font*/
+    font-family: 'Roboto';
+    src: url('./font-family/Roboto/Roboto-Regular.ttf') format('truetype');  
+       font-weight: normal;
+       font-style: normal;
+       src: url('path-to-your-fonts/Roboto-Regular.ttf') format('truetype'),
+            url('path-to-your-fonts/Roboto-Bold.ttf') format('truetype');
+    
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+/*wrapper*/
+.wrapper {
+    overflow: hidden;
+    padding-left: 18px;
+    padding-right: 18px;
+    max-width: 1236px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* site-header*/
+.site-header {
+    padding: 15px 0;
+    position: absolute;
+    width: 100%;
+}
+
+.hero {
+    background-color: #1F2937;
+}
+
+.hero .title h1 {      
+    line-height: 1;
+    margin-top: 20px;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero button {
+    background-color: #3882F6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.hero .secondary {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.logo {
+    float: left;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.menu-content {
+    float: right;
+}
+
+.menu-content nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu-content nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu-content nav ul li:last-child {
+    margin-right: 0;
+}
+
+.menu-content nav ul.secondary li a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+/* Change font color on mouseover */
+.menu-content nav ul.secondary li a:hover {
+    color: orange;
+}
+
+.hero .title h1,
+.hero .title .description,
+.hero .title button {
+    margin-bottom: 6px; /* Adjust this value to reduce vertical space */
+}
+.hero .title .description{
+    margin-top: 0px;
+}
+/*Extra constraints for the header left-rigth*/
+.constraints {
+    margin: 0 75px;
+}
+
+/* Responsive layout nav*/
+@media (max-width: 800px) {
+    .site-header .wrapper {
+        padding: 10px 0px; /* Adjust padding for smaller screens */
+    }
+
+    .site-header .constraints {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo, .menu-content {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px; /* Add some space between logo and menu for smaller screens */
+    }
+
+    .menu-content nav ul li {
+        font-size: 13px; /* Reduce font size for smaller screens */
+        display: inline;
+        margin-right: 5px;
+    }
+
+    .hero .title h1 {
+        font-size: 35px;
+    }
+
+    .hero .title .description,
+    .hero .title button {
+        font-size: 15px;
+    }
+
+    .hero button {
+        padding: 6px 10px;
+    }
+}
+
+/* Container flex in hero */
+.container {
+    padding: 80px 30px;
+    display: flex;  
+    justify-content: space-around;
+    align-items: start;
+    margin-top: 30px;
+}
+
+.container-item-left {
+    width: 40%;
+    text-align: left;    
+}
+
+.container-item-right {
+    width: 45%;
+    padding-top: 30px;
+}
+
+/* Responsive layout - makes a one column layout (100%) instead of a two-column layout (50%) */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column; /* Change flex direction to column for small screens */
+        padding: 140px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .container-item-left,
+    .container-item-right {
+        width: 100%; /* Full width on smaller screens */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .container-item-right {
+        padding-top: 0; /* Remove top padding on smaller screens */
+    }
+}
