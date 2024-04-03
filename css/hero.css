@@ -24,6 +24,10 @@ h1 {
     font-size: 48px;
     font-weight: bolder;
 }
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
 
 /*wrapper*/
 .wrapper {
@@ -38,8 +42,11 @@ h1 {
 /* site-header*/
 .site-header {
     padding: 15px 0;
-    position: absolute;
+    position: fixed; /* Make the header fixed */
+    top: 0; 
     width: 100%;
+    transition: background-color .3s ease-out;  
+    z-index: 1000;
 }
 
 .hero {
@@ -69,10 +76,15 @@ h1 {
     font-weight: 500;
     cursor: pointer;
 }
+.hero button:hover {
+    background-color: #4ea6f9; 
+    color:#1F2937;
+    font-weight: bold;
+}
 
 .hero .secondary {
     font-size: 18px;
-    color: #E5E7EB;
+    color: #E5E7EB;    
 }
 
 .logo {
@@ -98,11 +110,6 @@ h1 {
 
 .menu-content nav ul li:last-child {
     margin-right: 0;
-}
-
-.menu-content nav ul.secondary li a {
-    text-decoration: none;
-    color: #E5E7EB;
 }
 
 /* Change font color on mouseover */
@@ -138,11 +145,11 @@ h1 {
     .logo, .menu-content {
         width: 100%;
         text-align: center;
-        margin-bottom: 20px; /* Add some space between logo and menu for smaller screens */
+        margin-bottom: 5px; /* Add some space between logo and menu for smaller screens */
     }
 
     .menu-content nav ul li {
-        font-size: 13px; /* Reduce font size for smaller screens */
+        font-size: 12px; /* Reduce font size for smaller screens */
         display: inline;
         margin-right: 5px;
     }
@@ -158,6 +165,17 @@ h1 {
 
     .hero button {
         padding: 6px 10px;
+    }
+
+    .constraints {
+        margin: 0 5px;
+    }
+    
+}
+/* Responsive layout nav for medium screens */
+@media (max-width: 1024px) {
+    .menu-content nav ul li a {
+        font-size: 15px; /* Reduce font size for medium screens */
     }
 }
 
@@ -184,7 +202,8 @@ h1 {
 @media (max-width: 800px) {
     .container {
         flex-direction: column; /* Change flex direction to column for small screens */
-        padding: 140px 20px; /* Adjust padding for smaller screens */
+        // padding: 100px 20px; /* Adjust padding for smaller screens */
+        padding: 140px 20px 40px;
     }
 
     .container-item-left,
@@ -194,6 +213,6 @@ h1 {
     }
 
     .container-item-right {
-        padding-top: 0; /* Remove top padding on smaller screens */
+        padding-top: 5px; /* Remove top padding on smaller screens */
     }
 }
