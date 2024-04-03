@@ -125,3 +125,41 @@ footer {
 .cars strong{
     color:rgb(12, 13, 13);
 }
+
+li.cars .random-information{
+    text-transform: lowercase;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    color:#1F2937;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #cars-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cars {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #highlights h2 {
+        font-size: 28px;
+    }
+
+    .cars p {
+        font-size: 18px;
+    }
+
+    .cars img {
+        height: 80px;
+    }
+
+    li.cars .random-information {
+        font-size: 16px;
+    }
+}
