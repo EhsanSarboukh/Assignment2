@@ -66,6 +66,11 @@
     font-size: 16px;
     cursor: pointer;
 }
+.sign-up-button:hover {
+    background-color: #4ea6f9; 
+    color:#1F2937;
+    font-weight: bold;
+}
 footer {
     width: 100%;
     padding: 20px 0;
