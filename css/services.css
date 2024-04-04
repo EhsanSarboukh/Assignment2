@@ -26,7 +26,7 @@
     -webkit-text-stroke-color: transparent;
     letter-spacing: 4px;
     background-color: rgb(4,52,83);
-    background: linear-gradient(8deg,rgb(5, 6, 6) 0%,rgb(111, 125, 163) 41%,rgba(41,17,45,1) 100%);
+    background: linear-gradient(8deg,rgb(5, 6, 6) 0%,rgb(255, 255, 255) 41%,rgba(41,17,45,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position:relative;
