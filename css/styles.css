@@ -90,15 +90,29 @@ footer {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
-
+.button-anchor {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+.white-anchor {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+.white-anchor:hover {
+    color: orange;
+}
+.site-header-login {
+    padding: 15px 0;
+    width: 100%;
+}
 .login-container {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    margin: auto;
     min-width: 300px;
     max-width: 600px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
