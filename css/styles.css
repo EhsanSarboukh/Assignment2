@@ -66,7 +66,13 @@
     font-size: 16px;
     cursor: pointer;
 }
+.sign-up-button:hover {
+    background-color: #4ea6f9; 
+    color:#1F2937;
+    font-weight: bold;
+}
 footer {
+    width: 100%;
     padding: 20px 0;
     background-color: #1F2937;
     display: flex;
@@ -76,6 +82,82 @@ footer {
 .copyright-text {
     text-align: center;
     font-size: 18px;
+}
+/* Log in */
+
+.login-body {
+    margin: auto;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/cars/car.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button-anchor {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+.white-anchor {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+.white-anchor:hover {
+    color: orange;
+}
+.site-header-login {
+    padding: 15px 0;
+    width: 100%;
+}
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    min-width: 300px;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group button {
+    background-color: #3882F6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-group a {
+    color: #3882F6;
+    text-decoration: none;
 }
 
 /*Ehsan CSS*/
