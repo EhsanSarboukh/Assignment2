@@ -170,6 +170,7 @@ footer {
     text-transform: uppercase;
     text-align: center;
     font-size: 36px;
+    padding: 20px;
     font-weight: 700;
     color:#1F2937;
     margin:24px 0;
@@ -177,23 +178,22 @@ footer {
 
 #cars-info{
     display:flex;
-    width:90%;
+    width:100%;
     margin:auto;
-    margin-bottom:40px;
-    justify-content: center;
+    margin-bottom:20px;
+    justify-content:center;
     list-style: none;
 }
 
 .cars{
     margin:0 20px;
-    text-transform: uppercase;
 }
 
 .cars p{
     text-align: center;
     font-size: 24px;
     color:rgb(124,123,123);
-    margin:20px 0;
+    margin:20px 20px;
 }
 
 .cars img{
@@ -209,12 +209,14 @@ footer {
 }
 
 li.cars .random-information{
-    text-transform: lowercase;
+
+    padding-bottom: 80px;
+    margin-bottom: 0rem;
     text-align: center;
     font-size: 10px;
     font-weight: 700;
     color:#1F2937;
-    margin-top: 10px;
+
 }
 
 @media screen and (max-width: 768px) {
