@@ -79,10 +79,23 @@ footer {
     justify-content: center;
     color: #E5E7EB;
 }
-.copyright-text {
+footer div{
+    display: flex;
+    flex-direction: column;
+
+}
+footer div small{
     text-align: center;
     font-size: 18px;
 }
+footer .horizontal-box{
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+footer .horizontal-box small {
+    margin-right: 20px;
+}
+
 /* Log in */
 
 .login-body {
