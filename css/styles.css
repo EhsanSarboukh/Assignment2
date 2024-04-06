@@ -230,88 +230,58 @@ footer .copyright-text {
 }
 
 /*Ehsan CSS*/
-#highlights{
-    padding:24px;
-    background:linear-gradient(45deg, rgb(177, 170, 170),rgb(161, 192, 192));
+.boxes {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Allow flex items to wrap to new line */
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+    background-color: #ffff;
+    padding: 20px; /* Add padding */
 }
 
-#highlights h2{
+h2 {
     text-transform: uppercase;
-    text-align: center;
     font-size: 36px;
     font-weight: 700;
-    color:#1F2937;
-    margin:24px 0;
-}
-
-#cars-info{
-    display:flex;
-    width:100%;
-    margin:auto;
-    margin-bottom:20px;
-    justify-content:center;
-    list-style: none;
-}
-
-.cars{
-    margin:0 20px;
-}
-
-.cars p{
+    color: #1f2937;
     text-align: center;
-    font-size: 24px;
-    color:rgb(124,123,123);
-    margin:20px 20px;
+    margin-bottom: 50px;
+    width: 100%; /* Make h1 take full width */
 }
 
-.cars img{
-    height: 100px;
-    width: 100%;
-    box-shadow: 2px 4px 8px rgb(68,67,67);
-    border-radius: 10px;
-    object-fit: cover;
+.box {
+    flex:1 0 15%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
 }
 
-.cars strong{
-    color:rgb(12, 13, 13);
+.box:last-child {
+    margin-right: 0;
+}
+.box img {
+    height: 150px;
+    width: 150px; 
+    border: 3px solid rgb(102, 180, 235);
+    border-radius: 1rem;
+    display: flex;
+    margin: auto;
 }
 
-li.cars .random-information{
-
-    padding-bottom: 80px;
-    margin-bottom: 0rem;
+.box p {
     text-align: center;
-    font-size: 15px;
-    font-weight: 700;
-    color:#1F2937;
 
 }
 
 @media screen and (max-width: 768px) {
-    #cars-info {
-        flex-direction: column;
-        align-items: center;
+    .container {
+        padding: 10px; /* Reduce padding on smaller screens */
     }
-
-    .cars {
-        margin: 20px 0;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    #highlights h2 {
-        font-size: 28px;
-    }
-
-    .cars p {
-        font-size: 18px;
-    }
-
-    .cars img {
-        height: 80px;
-    }
-
-    li.cars .random-information {
-        font-size: 16px;
+    .box {
+        flex-basis: 100%; /* Set flex-basis to 100% for full width on smaller screens */
     }
 }
