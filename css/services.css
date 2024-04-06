@@ -1,29 +1,30 @@
-@font-face {
-  /*Adding the font*/
-  font-family: 'Roboto';
-  src: url('./font-family/Roboto/Roboto-Regular.ttf') format('truetype');  
-     font-weight: normal;
-     font-style: normal;
-     src: url('path-to-your-fonts/Roboto-Regular.ttf') format('truetype'),
-          url('path-to-your-fonts/Roboto-Bold.ttf') format('truetype');
-  
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url(./styles.css);
 
-}
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #191a2b;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  background-color: #191a2b;
+  flex-direction: column; 
+  position: relative;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #1F2937; /* hero footer */
+  color: #E5E7EB; 
+  padding: 20px 0; 
+  text-align: center;
+}
   .service-wrapper {
     width: 80%;
   }
