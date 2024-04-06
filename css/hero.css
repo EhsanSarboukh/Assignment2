@@ -202,7 +202,6 @@ a {
 @media (max-width: 800px) {
     .container {
         flex-direction: column; /* Change flex direction to column for small screens */
-        // padding: 100px 20px; /* Adjust padding for smaller screens */
         padding: 140px 20px 40px;
     }
 
