@@ -13,70 +13,71 @@
 </head>
 <body>
     <header class="site-header hero">
-        <div class="wrapper">
+        <aside class="wrapper" aria-label="site-header">
             <div class="constraints">
-                <div class="logo">
-                    <div class="text"><a href="">Rent a car solution</a></div>
-                </div>
-                <div class="menu-content">
-                    <nav>
-                        <ul class="secondary">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="./pages/services/services.html">Services</a></li>
-                            <li><a href="#testimonials">Testimonials</a></li>
-                            <li><a href="#contact-us">Contact Us</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-     <main>
-    <div class="hero">
-        <div class="wrapper">
-            <div class="container">
-                <div class="title container-item-left">
-                    <h1><strong>Travel around the country with our cars!</strong></h1>
-                    <p class="description secondary">Discover new places, enjoy with your family while we care for you!
-                    </p>
-                    <button><a href="./pages/register/login.html">Sign Up</a></button>
-                </div>
-                <picture class="container-item-right">
-                    <img src="./images/hero/men-with-car.jpg" alt="Rent a car solution" width="auto">
+                <picture class="logo">
+                    <legend class="text"><a href="">Rent a car solution</a></legend>
                 </picture>
+                <nav>
+                    <ul class="secondary">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="./pages/services/services.html">Services</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact-us">Contact Us</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-    </div>
-    </section>
-    <!-- Mariela's part finish here  -->
+        </aside>
+    </header>
+    <main>
+        <section>
+            <aside class="hero" aria-label="hero-section">
+                <div class="wrapper">
+                    <div class="container">
+                        <article class="title container-item-left" aria-label="intro">
+                            <h1><strong>Travel around the country with our cars!</strong></h1>
+                            <p class="description secondary">Discover new places, enjoy with your family while we care for you!</p>
+                            <button><a href="./pages/register/login.html">Sign Up</a></button>
+                        </article>
+                        <picture class="container-item-right">
+                            <img src="./images/hero/men-with-car.jpg" alt="Rent a car solution" width="auto">
+                        </picture>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
     <section>
-        <h2>Highlight on our luxury companies:</h2>
-        <div class="boxes">
+        <aside aria-label="highlights">
+            <h2>Highlight on our luxury companies:</h2>
+            <div class="boxes">
+                <figure class="box">
+                    <img src="./images/cars/genisis.png" alt="Mercedez Benz">
+                    <figcaption>
+                        <p>Mercedez Benz</p>
+                    </figcaption>
+                </figure>
+                <figure class="box">
+                    <img src="./images/cars/logo3.jpg" alt="Bentley">
+                    <p>Bentley</p>
+                </figure>
             <figure class="box">
-                <img src="./images/cars/genisis.png" alt="Your Image Description">
-                <figcaption>
-                    <p>Mercedez Benz</p>
-                </figcaption>
-            </figure>
-            <figure class="box">
-                <img src="./images/cars/logo3.jpg" alt="Your Image Description">
-                <p>Bentley</p>
-            </figure>
-           <figure class="box">
-                <img src="./images/cars/mini.jpeg" alt="Your Image Description">
-                <figcaption>
-                    <p>Mini Cooper</p>
-                </figcaption>
-            </figure>
-            <figure class="box">
-                <img src="./images/cars/logo4.png" alt="Your Image Description">
-                <figcaption>
-                    <p>Aston Martin</p>
-                </figcaption>
-            </figure>
-        </div>
+                    <img src="./images/cars/mini.jpeg" alt="Mini Cooper">
+                    <figcaption>
+                        <p>Mini Cooper</p>
+                    </figcaption>
+                </figure>
+                <figure class="box">
+                    <img src="./images/cars/logo4.png" alt="Aston Martin">
+                    <figcaption>
+                        <p>Aston Martin</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </aside>
     </section>
-    <section id="highlights">
+
+    <section id="testimonials">
         <div class="ultramega-inspiring quote" data-matching-link="#testimonials-link" id="testimonials">
             <blockquote>
                 <h3>
@@ -88,22 +89,24 @@
                     reliability with our trusted rental service. Your dream
                     road trip awaits – book now and embark on the ultimate adventure!"
                 </h3>
-                <h3 class="author-name-text"> -Julian R </h3>
+                <cite class="author-name-text"> -Julian R </cite>
             </blockquote>
         </div>
     </section>
-    <div class="sign-up-container">
-        <div>
-            <h3>Call to action! It´s time!</h3>
-            <h4>Sign up for our product by clicking that button right over there!</h4>
+    <section>
+        <div class="sign-up-container">
+            <div>
+                <h3>Call to action! It´s time!</h3>
+                <h4>Sign up for our product by clicking that button right over there!</h4>
+            </div>
+            <button class="sign-up-button">
+                <a class="button-anchor" href="./pages/register/login.html">Sign Up</a>
+            </button>
         </div>
-        <button class="sign-up-button">
-            <a class="button-anchor" href="./pages/register/login.html">Sign Up</a>
-        </button>
-    </div>
+    </section>
     </main>
     <footer>
-        <div>
+        <aside aria-label="contact-us">
             <div class="horizontal-box">
                 <small class="copyright-text" data-matching-link="#contact-us-link" id="contact-us">
                     <b>Contact us</b>
@@ -112,7 +115,7 @@
                 <small>Phone: +123456789</small>
             </div>
             <small>Copyright© 2024 The Rent a car solution.</small>
-        </div>
+        </aside>
     </footer>
 </body>
 </html>
