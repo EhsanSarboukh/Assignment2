@@ -6,11 +6,12 @@
 
 .ultramega-inspiring {
     background-color: #e5e7eb;
-    padding: 5% 10%;
 }
-.ultramega-inspiring p {
+.ultramega-inspiring blockquote {
     display: flex;
     flex-direction: column;
+    margin: auto;
+    padding: 20px 15%;
 }
 .ultramega-inspiring h3 {
     font-style: italic;
@@ -21,6 +22,7 @@
 .ultramega-inspiring .author-name-text{
     font-size: 24px;
     font-weight: 900;
+    margin-left: auto;
     text-align: right;
 }
 @media screen and (max-width: 768px) {
@@ -30,6 +32,10 @@
 
     .ultramega-inspiring .author-name-text {
         font-size: 20px;
+    }
+    .ultramega-inspiring blockquote {
+        padding: 20px 4%;
+    
     }
 }
 
@@ -44,38 +50,39 @@
 }
 .sign-up-container {
     background-color: #3882F6;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5% 8%;
+    margin: 5% 15%;
     color: white;
     display: flex;
     border-radius: 5px;
     
 }
-.sign-up-container div{
+.sign-up-container .sign-up-aside{
     display: flex;
     justify-content:  center;
     flex-direction: column;
     padding: 40px;
-    margin-left: auto;
+    margin: auto;
 }
-.sign-up-container div h4 {
+.sign-up-container .sign-up-aside h4 {
     color: #E5E7EB ;
     font-size: 16px;
     font-weight: 400;
     margin: 0
 }
-.sign-up-container div h3{
+.sign-up-container .sign-up-aside h3{
     margin: 0;
 }
-.sign-up-container .sign-up-button {
-    border: 2px solid white;
-    width: 160px;
-    margin: auto;
+
+.sign-up-container a{
+    margin-right: auto;
 }
-.sign-up-button {
+
+.sign-up-container .sign-up-button {
     background-color: #3882F6;
-    border: none;
+    border: 2px solid white;
     border-radius: 5px;
     padding: 10px 20px;
     color: white;
@@ -84,6 +91,8 @@
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
+    width: 160px;
+    margin-right: auto;
 }
 .sign-up-button:hover {
     background-color: #4ea6f9; 
@@ -96,7 +105,7 @@
         margin: 5% 2%;
     }
 
-    .sign-up-container div {
+    .sign-up-container .sign-up-aside {
         width: 70%;
         padding: 20px; 
     }
@@ -110,7 +119,9 @@
     }
 
     .sign-up-container .sign-up-button {
-        width: 74px;
+        width: 80px;
+        font-size: 15px; 
+        padding: 5px 10px;
     }
 }
 
@@ -124,20 +135,28 @@ footer {
     align-items: center;
 }
 
-footer div {
+footer aside {
     display: flex;
     flex-direction: column;
+    font-size: 20px;
     align-items: center;
-}
-
-footer .horizontal-box {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-    margin-bottom: 10px;
 }
 
-footer .horizontal-box small {
+.contact-list {
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 0; 
+}
+
+.contact-list li:first-child {
+    margin-right: 20px;
+}
+
+
+footer .contact-list small {
     margin-right: 20px;
 }
 
@@ -148,8 +167,19 @@ footer .copyright-text {
 }
 
 @media screen and (min-width: 768px) {
-    footer .horizontal-box small {
+    footer .contact-list small,
+    footer .copyright-text small {
         font-size: 20px; 
+    }
+}
+@media screen and (max-width: 768px) {
+    footer .contact-list {
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-list li:last-child {
+        margin-bottom: 10px;
     }
 }
 /* Log in */
@@ -165,6 +195,9 @@ footer .copyright-text {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.ssdf{
+    background-color: red;
 }
 .button-anchor {
     text-decoration: none;
@@ -197,7 +230,7 @@ footer .copyright-text {
 }
 
 .form-group {
-    margin-bottom: 20px;
+    border: none;
 }
 
 .form-group label {
