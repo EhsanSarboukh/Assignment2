@@ -1,6 +1,4 @@
-/* CSS styling */
 @font-face {
-    /*Adding the font*/
     font-family: 'Roboto';
     src: url('./font-family/Roboto/Roboto-Regular.ttf') format('truetype');  
        font-weight: normal;
@@ -30,7 +28,6 @@ a {
     color: #E5E7EB;
 }
 
-/*wrapper*/
 .wrapper {
     overflow: hidden;
     padding-left: 18px;
@@ -39,11 +36,9 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
-
-/* site-header*/
 .site-header {
     padding: 15px 0;
-    position: fixed; /* Make the header fixed */
+    position: fixed; 
     top: 0; 
     width: 100%;
     transition: background-color .3s ease-out;  
@@ -94,8 +89,6 @@ a {
     font-size: 24px;
     color: #F9FAF8;
 }
-
-/* Remove float from logo and align nav to right */
 .site-header::after {
     content: "";
     display: table;
@@ -121,7 +114,6 @@ a {
     margin-right: 0;
 }
 
-/* Change font color on mouseover */
 .site-header nav ul.secondary li a:hover {
     color: orange;
 }
@@ -129,22 +121,19 @@ a {
 .hero .title h1,
 .hero .title .description,
 .hero .title button {
-    margin-bottom: 6px; /* Adjust this value to reduce vertical space */
+    margin-bottom: 6px;
 }
 
 .hero .title .description{
     margin-top: 0px;
 }
-
-/*Extra constraints for the header left-right*/
 .constraints {
     margin: 0 75px;
 }
 
-/* Responsive layout nav*/
 @media (max-width: 800px) {
     .site-header .wrapper {
-        padding: 10px 0px; /* Adjust padding for smaller screens */
+        padding: 10px 0px; 
     }
 
     .site-header .constraints {
@@ -156,11 +145,11 @@ a {
     .logo, nav {
         width: 100%;
         text-align: center;
-        margin-bottom: 12px; /* Add some space between logo and menu for smaller screens */
+        margin-bottom: 12px;
     }
 
     nav ul li {
-        font-size: 12px; /* Reduce font size for smaller screens */
+        font-size: 12px;
         display: inline;
         margin-right: 5px;
     }
@@ -183,14 +172,11 @@ a {
     }
 }
 
-/* Responsive layout nav for medium screens */
 @media (max-width: 1024px) {
     nav ul li a {
-        font-size: 15px; /* Reduce font size for medium screens */
+        font-size: 15px; 
     }
 }
-
-/* Container flex in hero */
 .container {
     padding: 80px 30px;
     display: flex;  
@@ -209,21 +195,20 @@ a {
     padding-top: 30px;
 }
 
-/* Responsive layout - makes a one column layout (100%) instead of a two-column layout (50%) */
 @media (max-width: 800px) {
     .container {
-        flex-direction: column; /* Change flex direction to column for small screens */
+        flex-direction: column;
         padding: 140px 20px 60px;
         margin-top: 110px;
     }
 
     .container-item-left,
     .container-item-right {
-        width: 100%; /* Full width on smaller screens */
-        text-align: center; /* Center text on smaller screens */
+        width: 100%;
+        text-align: center;
     }
 
     .container-item-right {
-        padding-top: 10px; /* Remove top padding on smaller screens */
+        padding-top: 10px;
     }
 }
